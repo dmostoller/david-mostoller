@@ -37,7 +37,7 @@ function App() {
         </div>
         <div className="card">
             <h3>Social Art Portfolio</h3>
-            <h5 className='grey'>An Fresh Take on an Artist Portfolio</h5>
+            <h5 className='grey'>A Fresh Take on an Artist Portfolio</h5>
                 <a href="https://www.loom.com/share/6963e453b24648c7863de7ad8d490ec4" target='_blank'>
                     <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/6963e453b24648c7863de7ad8d490ec4-with-play.gif"></img>
                 </a>
