@@ -3,6 +3,7 @@ import gitLogo from './assets/github-142-svgrepo-com.svg'
 import linkedInLogo from './assets/linkedin-svgrepo-com.svg'
 import marsThumb from './assets/thumb.png'
 import musicThumb from './assets/thumb-1.png'
+import myResume from './assets/DBM_2024_SE_Resume.pdf'
 
 import './App.css'
 
@@ -22,6 +23,9 @@ function App() {
         </a>
       </div>
       <h1>David Mostoller</h1>
+      <a href={myResume} download="David_Mostoller_Resume" target='_blank'>
+        <button>Download Resume</button>
+      </a>
       <div className='container'>
         <div className="card">
             <h3>Musician's Base</h3>
