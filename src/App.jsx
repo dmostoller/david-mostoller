@@ -3,7 +3,7 @@ import gitLogo from './assets/github-142-svgrepo-com.svg'
 import linkedInLogo from './assets/linkedin-svgrepo-com.svg'
 import marsThumb from './assets/thumb.png'
 import musicThumb from './assets/thumb-1.png'
-import myResume from './assets/DBM_2024_SE_Resume.pdf'
+import myResume from './assets/DBM_2024_SE_Resume_1.pdf'
 
 import './App.css'
 
