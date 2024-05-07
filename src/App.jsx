@@ -22,7 +22,8 @@ function App() {
           <img src={mediumLogo} className="logo medium" alt="Medium logo" />
         </a>
       </div>
-      <h1>David Mostoller</h1>
+      <h1 style={{marginBottom: "0px"}}>David Mostoller</h1>
+      <h4 className='grey'style={{marginTop: "0px"}}>Full-Stack Software Engineer</h4>
       <a href={myResume} download="David_Mostoller_Resume" target='_blank'>
         <button>Download Resume</button>
       </a>
