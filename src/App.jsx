@@ -49,6 +49,9 @@ function App() {
                 <a href="https://github.com/dmostoller/social-artist-portfolio" target='_blank'>
                     <button>GitHub Repo</button>
                 </a>
+                <a href="https://yasmin-mostoller.onrender.com/" target='_blank'>
+                    <button>Deployed Site</button>
+                </a>
                 </div>
         </div>
         <div className="card">
