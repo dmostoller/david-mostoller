@@ -8,7 +8,11 @@ import myResume from './assets/DBM_2024_SE_Resume.pdf'
 import './App.css'
 
 function App() {
+  function calendly() {
+    Calendly.initBadgeWidget({ url: 'https://calendly.com/dmostoller/15-minute-coffee-virtual-chat', text: 'Schedule time with me', color: '#000000', textColor: '#ffffff', branding: undefined }); 
+  }
 
+  calendly();
   return (
     <>
       <div>
@@ -31,10 +35,11 @@ function App() {
       <a href={myResume} download="David_Mostoller_Resume" target='_blank'>
         <button> Resume</button>
       </a>
+      <div id='calendly'></div>
       <div className='container'>
         <div className="card">
-            <h3>Musician's Base</h3>
-            <h5 className='grey'>The Social Fanpage for Independent Musicians</h5>
+            <h3 style={{marginBottom:"0px"}}>Musician's Base</h3>
+            <h5 className='grey' style={{marginTop: "0px"}}>The Social Fanpage for Independent Musicians</h5>
                 <a href="https://vimeo.com/929736905?share=copy" target='_blank'>
                     <img style={{maxWidth: "300px"}} src={musicThumb}></img>
                 </a>
@@ -48,8 +53,8 @@ function App() {
                 </div>
         </div>
         <div className="card">
-            <h3>Social Art Portfolio</h3>
-            <h5 className='grey'>A Fresh Take on an Artist Portfolio</h5>
+            <h3 style={{marginBottom:"0px"}}>Social Art Portfolio</h3>
+            <h5 className='grey' style={{marginTop: "0px"}}>A Fresh Take on an Artist Portfolio</h5>
                 <a href="https://www.loom.com/share/6963e453b24648c7863de7ad8d490ec4" target='_blank'>
                     <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/6963e453b24648c7863de7ad8d490ec4-with-play.gif"></img>
                 </a>
@@ -63,8 +68,8 @@ function App() {
                 </div>
         </div>
         <div className="card">
-            <h3>Mars Base</h3>
-            <h5 className='grey'>A Python CLI Game in the style of Oregon Trail</h5>
+            <h3 style={{marginBottom:"0px"}}>Mars Base</h3>
+            <h5 className='grey' style={{marginTop: "0px"}}>A Python CLI Game in the style of Oregon Trail</h5>
                 <a href="https://vimeo.com/930451133?share=copy" target='_blank'>
                     <img style={{maxWidth: "300px"}} src={marsThumb}></img>
                 </a>
