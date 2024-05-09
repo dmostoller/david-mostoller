@@ -23,9 +23,13 @@ function App() {
         </a>
       </div>
       <h1 style={{marginBottom: "0px"}}>David Mostoller</h1>
-      <h4 className='grey'style={{marginTop: "0px"}}>Full-Stack Software Engineer</h4>
+      <h4 className='grey' style={{marginTop: "0px", marginBottom:"0px"}}>Full-Stack Software Engineer</h4>
+      <h5 className='grey' style={{marginTop: "0px"}}>dmostoller@gmail.com</h5>
+      <a href="https://www.loom.com/share/f658be9f027a44d684df1073a47c132a?sid=9615b220-c5ab-4332-a822-9ad6c2d9e2ca" target='_blank'>
+        <button>Elevator Pitch</button>
+      </a>
       <a href={myResume} download="David_Mostoller_Resume" target='_blank'>
-        <button>Download Resume</button>
+        <button> Resume</button>
       </a>
       <div className='container'>
         <div className="card">
@@ -38,6 +42,9 @@ function App() {
                     <a href="https://github.com/dmostoller/musicians-base" target='_blank'>
                     <button>GitHub Repo</button>
                     </a>
+                    <a href="https://superluminal.onrender.com/" target='_blank'>
+                    <button>Deployed Site</button>
+                </a>
                 </div>
         </div>
         <div className="card">
