@@ -40,7 +40,7 @@ function App() {
         <div className="card">
             <h3 style={{marginBottom:"0px"}}>Musician's Base</h3>
             <h5 className='grey' style={{marginTop: "0px"}}>The Social Fanpage for Independent Musicians</h5>
-                <a href="https://vimeo.com/929736905?share=copy" target='_blank'>
+                <a href="https://vimeo.com/944678547?share=copy" target='_blank'>
                     <img style={{maxWidth: "300px"}} src={musicThumb}></img>
                 </a>
                 <div>
