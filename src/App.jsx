@@ -8,6 +8,7 @@ import 'semantic-ui-css/semantic.min.css'
 import About from './About'
 
 import './App.css'
+import Elevator from './Elevator'
 
 function App() {
   function calendly() {
@@ -31,9 +32,11 @@ function App() {
       <h1 style={{marginBottom: "0px"}}>David Mostoller</h1>
       <h4 className='grey' style={{marginTop: "0px", marginBottom:"0px"}}>Full-Stack Software Engineer</h4>
       <h5 className='grey' style={{marginTop: "0px"}}>dmostoller@gmail.com</h5>
-      <a href="https://www.loom.com/share/f658be9f027a44d684df1073a47c132a?sid=9615b220-c5ab-4332-a822-9ad6c2d9e2ca" target='_blank'>
+
+      {/* <a href="https://www.loom.com/share/f658be9f027a44d684df1073a47c132a?sid=9615b220-c5ab-4332-a822-9ad6c2d9e2ca" target='_blank'>
         <button className='ui button'>Elevator Pitch</button>
-      </a>
+      </a> */}
+      <Elevator />
       <a href={myResume} download="David_Mostoller_Resume" target='_blank'>
         <button className='ui button'>Resume</button>
       </a>
@@ -42,7 +45,7 @@ function App() {
       <div className='container'>
         <div className="card">
             <h3 style={{marginBottom:"0px"}}>Musician's Base</h3>
-            <h5 className='grey' style={{marginTop: "0px"}}>The Social Fanpage for Independent Musicians</h5>
+            <h5 className='grey' style={{marginTop: "0px"}}>A Social Fanpage for Independent Musicians</h5>
                 <a href="https://vimeo.com/944678547?share=copy" target='_blank'>
                     <img style={{maxWidth: "300px"}} src={musicThumb}></img>
                 </a>
