@@ -16,7 +16,7 @@ import { Container, GridRow, GridColumn, Grid, Menu, MenuItem, Icon} from 'seman
 
 function App() {
   function calendly() {
-    Calendly.initBadgeWidget({ url: 'https://calendly.com/dmostoller/15-minute-coffee-virtual-chat', text: 'Schedule time with me', color: 'green', textColor: '#ffffff', branding: undefined}); 
+    Calendly.initBadgeWidget({ url: 'https://calendly.com/dmostoller/15-minute-coffee-virtual-chat', text: 'Schedule time with me', color: 'black', textColor: '#ffffff', branding: undefined}); 
   }
 
   calendly();
