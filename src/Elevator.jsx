@@ -28,9 +28,8 @@ export default function Elevator () {
       <Embed
             icon='right circle arrow'
             placeholder={thumb}
-            url='https://www.loom.com/embed/f658be9f027a44d684df1073a47c132a?sid=4faa09fd-8dde-497d-8413-1600b0d599f9'
+            url='https://www.loom.com/embed/f658be9f027a44d684df1073a47c132a?sid=57a53fd8-5afc-4e03-bdeb-2371261bed7a'
         />
-        {/* <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f658be9f027a44d684df1073a47c132a?sid=4faa09fd-8dde-497d-8413-1600b0d599f9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div> */}
       </ModalContent>
       <ModalActions>
         <Button
