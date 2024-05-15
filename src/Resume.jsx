@@ -19,6 +19,7 @@ export default function Resume () {
 
     return (
     <Modal
+      closeIcon
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
@@ -33,10 +34,20 @@ export default function Resume () {
         </ModalDescription>
       </ModalContent>
       <ModalActions>
-        <a href={resume} download="David_Mostoller_Resume" target='_blank'>
-            <button className='ui button'>Download Resume</button>
-        </a>
+        {/* <a href={resume} download="David_Mostoller_Resume" target='_blank'>
+            <button className='ui green button'>Download Resume</button>
+        </a> */}
         <Button
+        href={resume}
+        download="David_Mostoller_Resume"
+        target='_blank'
+        positive
+        icon='download'
+        labelPosition='right'
+        content="Download Resume"
+        />
+        <Button
+          primary
           content="Close"
           labelPosition='right'
           icon='remove'

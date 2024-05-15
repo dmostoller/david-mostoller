@@ -32,6 +32,7 @@ export default function Email () {
    
     return (
     <Modal
+      closeIcon
       size={"small"}
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
@@ -63,6 +64,7 @@ export default function Email () {
           labelPosition="right"
         />  
         <Button
+          primary
           content="Close"
           labelPosition='right'
           icon='remove'

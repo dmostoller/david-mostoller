@@ -19,6 +19,7 @@ export default function About () {
 
     return (
     <Modal
+      closeIcon
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
@@ -40,6 +41,7 @@ export default function About () {
       </ModalContent>
       <ModalActions>
         <Button
+          primary
           content="Close"
           labelPosition='right'
           icon='remove'

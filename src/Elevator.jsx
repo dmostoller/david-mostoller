@@ -36,6 +36,7 @@ export default function Elevator () {
       <ModalActions>
         <Button
           content="Close"
+          primary
           labelPosition='right'
           icon='remove'
           onClick={() => setOpen(false)}
