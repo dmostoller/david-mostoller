@@ -13,7 +13,7 @@ import './App.css'
 import Elevator from './Elevator'
 import Projects from './Projects'
 import Email from './Email'
-import { Container, GridRow, GridColumn, Grid, Menu, MenuItem, Icon, Radio} from 'semantic-ui-react'
+import { Container, GridRow, GridColumn, Grid, Menu, ButtonGroup, Button, MenuItem, Icon, Radio} from 'semantic-ui-react'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,8 +29,8 @@ function App() {
 
   calendly();
   return (
-    <div className='ui container' 
-    style={darkMode ? {backgroundColor: "#1c1c1c", width: "100vw", height:"100vh", display:"flex", justifyContent: 'center', alignItems: 'center'} : {backgroundColor: "#ffffff", width: "100vw", height:"100vh", display:"flex", justifyContent: 'center', alignItems: 'center'}}>
+    <div 
+    style={darkMode ? {backgroundColor: "#1c1c1c", width: "100vw", padding:"0px", height:"100vh", display:"flex", justifyContent: 'center', alignItems: 'center'} : {backgroundColor: "#ffffff", width: "100vw", height:"100vh", display:"flex", justifyContent: 'center', alignItems: 'center'}}>
         <Grid container stackable>
         <GridRow>
         <GridColumn>
@@ -88,6 +88,14 @@ function App() {
           onChange={toggleDarkMode}
           />
           </div>
+          {/* <div 
+          id='link-buttons'>
+          <ButtonGroup vertical>
+            <Button color='black' icon='medium'/>
+            <Button color='black' icon='linkedin'/>
+            <Button color='black' icon='github'/>
+          </ButtonGroup>
+          </div> */}
       </div>
   )
 }

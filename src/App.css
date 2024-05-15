@@ -46,8 +46,13 @@
   }
 
 #dark-toggle {
-  display: block;
   position: fixed;
   top: 20px;
   right: 20px;
+}
+
+#link-buttons {
+  position: fixed;
+  top: 50vh;
+  left: 20px;
 }
