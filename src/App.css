@@ -44,3 +44,10 @@
   justify-content: center;
   flex-wrap: wrap;
   }
+
+#dark-toggle {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
