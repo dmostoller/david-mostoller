@@ -8,6 +8,7 @@ import myResume from './assets/DBM_2024_SE_Resume.pdf'
 import 'semantic-ui-css/semantic.min.css'
 import About from './About'
 import Resume from './Resume'
+import { useDarkMode } from './context/darkMode'
 
 import './App.css'
 import Elevator from './Elevator'
@@ -16,7 +17,7 @@ import Email from './Email'
 import { Container, GridRow, GridColumn, Grid, Menu, ButtonGroup, Button, MenuItem, Icon, Radio} from 'semantic-ui-react'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const {darkMode, setDarkMode} = useDarkMode();
 
   function toggleDarkMode() {
     setDarkMode(!darkMode)
@@ -26,7 +27,7 @@ function App() {
     Calendly.initBadgeWidget({ url: 'https://calendly.com/dmostoller/15-minute-coffee-virtual-chat', text: 'Schedule time with me', color: 'black', textColor: '#ffffff', branding: undefined}); 
   }
   
-
+  console.log(darkMode)
   calendly();
   return (
     <div 

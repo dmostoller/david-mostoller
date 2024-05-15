@@ -15,9 +15,12 @@ import {
     FormTextArea,
     
   } from 'semantic-ui-react'
+import { useDarkMode } from "./context/darkMode"
+
 
 
 const Email = () => {
+    const {darkMode} = useDarkMode();
     const [open, setOpen] = useState(false)
     const form = useRef();
 
@@ -36,7 +39,9 @@ const Email = () => {
  
    
     return (
-    <Modal
+      <>
+      {(darkMode === true) ?
+      <Modal
       basic
       closeIcon
       size={"small"}
@@ -75,6 +80,47 @@ const Email = () => {
         />
       </ModalActions>
     </Modal>
+    :
+    <Modal
+    closeIcon
+    size={"small"}
+    onClose={() => setOpen(false)}
+    onOpen={() => setOpen(true)}
+    open={open}
+    trigger={<MenuItem><Icon name='mail' />Contact</MenuItem>}
+  > 
+    <ModalHeader>Get In Touch</ModalHeader>
+    <ModalContent>
+      <ModalDescription>
+          <form class="ui form" ref={form} onSubmit={sendEmail}>
+              <div class="field">
+                  <label>Name</label>
+                  <input type='text' name="from_name" placeholder="Your Name..."/>
+              </div>
+              <div class="field">
+                  <label>Email</label>
+                  <input type='email' name="reply_to" placeholder="Your Email..."/>
+              </div>
+              <div class="field">
+              <label>Message</label>
+                  <textarea name="message" placeholder="Your Message..."/>
+              </div>
+              <button class="ui positive fluid button" type="submit">Submit</button>
+          </form>
+      </ModalDescription>
+    </ModalContent>
+    <ModalActions>
+      <Button
+        primary
+        content="Close"
+        labelPosition='right'
+        icon='remove'
+        onClick={() => setOpen(false)}
+      />
+    </ModalActions>
+  </Modal>
+      }
+      </>
     )    
 }
 export default Email
