@@ -1,6 +1,6 @@
-import mediumLogo from './assets/medium-svgrepo-com.svg/'
-import gitLogo from './assets/github-142-svgrepo-com.svg'
-import linkedInLogo from './assets/linkedin-svgrepo-com.svg'
+import mediumLogo from './assets/medium-fill-svgrepo-com.svg/'
+import gitLogo from './assets/github-svgrepo-com-4.svg'
+import linkedInLogo from './assets/linkedin-box-fill-svgrepo-com.svg'
 import marsThumb from './assets/thumb.png'
 import musicThumb from './assets/thumb-1.png'
 import myResume from './assets/DBM_2024_SE_Resume.pdf'
@@ -37,11 +37,11 @@ function App() {
             <img src={mediumLogo} className="logo" alt="Medium logo" />
             </a>
         </div>
-        <h1 style={{marginBottom: "0px"}}>David Mostoller</h1>
+        <h1 className='white' style={{marginBottom: "0px"}}>David Mostoller</h1>
         <h4 className='grey' style={{marginTop: "0px", marginBottom:"0px"}}>Full-Stack Software Engineer</h4>
         <h5 className='grey' style={{marginTop: "0px"}}>dmostoller@gmail.com</h5>
         
-        <Menu size='large' stackable compact icon='labeled'>
+        <Menu size='large' inverted borderless stackable compact icon='labeled'>
             <About />
             <Projects />
             <Elevator />

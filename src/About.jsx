@@ -20,6 +20,7 @@ export default function About () {
 
     return (
     <Modal
+      basic
       closeIcon
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}

@@ -18,6 +18,7 @@ export default function Projects () {
 
     return (
     <Modal
+      basic
       closeIcon
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
@@ -34,10 +35,10 @@ export default function Projects () {
                 </a>
                 <div>
                     <a href="https://github.com/dmostoller/musicians-base" target='_blank'>
-                    <button className='ui button'>GitHub Repo</button>
+                    <button className='ui teal button'>GitHub Repo</button>
                     </a>
                     <a href="https://superluminal.onrender.com/" target='_blank'>
-                    <button className='ui button'>Deployed Site</button>
+                    <button className='ui violet button'>Deployed Site</button>
                 </a>
                 </div>
         </div>
@@ -49,10 +50,10 @@ export default function Projects () {
                 </a>
                 <div>
                 <a href="https://github.com/dmostoller/social-artist-portfolio" target='_blank'>
-                    <button className='ui button'>GitHub Repo</button>
+                    <button className='ui teal button'>GitHub Repo</button>
                 </a>
                 <a href="https://yasmin-mostoller.onrender.com/" target='_blank'>
-                    <button className='ui button'>Deployed Site</button>
+                    <button className='ui violet button'>Deployed Site</button>
                 </a>
                 </div>
         </div>
@@ -64,7 +65,7 @@ export default function Projects () {
                 </a>
                 <div>
                 <a href="https://github.com/dmostoller/mars-base" target='_blank'>
-                    <button className='ui button'>GitHub Repo</button>
+                    <button className='ui teal button'>GitHub Repo</button>
                 </a>
                 </div>
         </div>

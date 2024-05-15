@@ -19,6 +19,7 @@ export default function Resume () {
     return (
     <Modal
       closeIcon
+      basic
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}

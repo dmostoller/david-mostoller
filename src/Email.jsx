@@ -37,6 +37,7 @@ const Email = () => {
    
     return (
     <Modal
+      basic
       closeIcon
       size={"small"}
       onClose={() => setOpen(false)}
@@ -64,7 +65,7 @@ const Email = () => {
             </form>
         </ModalDescription>
       </ModalContent>
-      {/* <ModalActions>
+      <ModalActions>
         <Button
           primary
           content="Close"
@@ -72,7 +73,7 @@ const Email = () => {
           icon='remove'
           onClick={() => setOpen(false)}
         />
-      </ModalActions> */}
+      </ModalActions>
     </Modal>
     )    
 }
