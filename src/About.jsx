@@ -8,6 +8,7 @@ import {
     Button,
     Header,
     Image,
+    MenuItem,
     Modal,
   } from 'semantic-ui-react'
   import headshot from './assets/david-headshot-amtrak.jpg'
@@ -23,7 +24,7 @@ export default function About () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>About Me</Button>}
+      trigger={<MenuItem>About Me</MenuItem>}
     >
       <ModalContent image>
         <Image size='huge' src={headshot} wrapped />

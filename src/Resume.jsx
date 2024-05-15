@@ -5,6 +5,7 @@ import {
     ModalDescription,
     ModalContent,
     ModalActions,
+    MenuItem,
     Button,
     Header,
     Image,
@@ -24,7 +25,7 @@ export default function Resume () {
       onOpen={() => setOpen(true)}
       open={open}
       height={"100vh"}
-      trigger={<Button>Resume</Button>}
+      trigger={<MenuItem>Resume</MenuItem>}
     >
       <ModalContent>
         <ModalDescription>

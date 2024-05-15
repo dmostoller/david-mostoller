@@ -12,7 +12,7 @@ import './App.css'
 import Elevator from './Elevator'
 import Projects from './Projects'
 import Email from './Email'
-import { Container, GridRow, GridColumn, Grid} from 'semantic-ui-react'
+import { Container, GridRow, GridColumn, Grid, Menu, MenuItem, Icon} from 'semantic-ui-react'
 
 function App() {
   function calendly() {
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
     <Container>
-        <Grid>
+        <Grid container stackable>
         <GridRow>
         <GridColumn>
         <div className='ui centered grid'>
@@ -40,13 +40,14 @@ function App() {
         <h1 style={{marginBottom: "0px"}}>David Mostoller</h1>
         <h4 className='grey' style={{marginTop: "0px", marginBottom:"0px"}}>Full-Stack Software Engineer</h4>
         <h5 className='grey' style={{marginTop: "0px"}}>dmostoller@gmail.com</h5>
-        <div className='ui centered grid' style={{marginTop: "5px"}}>
-            <Elevator />
+        
+        <Menu stackable compact>
             <About />
             <Projects />
+            <Elevator />
             <Resume />
             {/* <Email /> */}
-        </div>
+        </Menu>
       </GridColumn>
       </GridRow>
       </Grid>

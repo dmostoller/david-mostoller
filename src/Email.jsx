@@ -7,6 +7,7 @@ import {
     ModalActions,
     Button,
     Modal,
+    MenuItem,
     Form,
     FormField,
     FormTextArea,
@@ -37,32 +38,33 @@ export default function Email () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Contact</Button>}
+      trigger={<MenuItem>Contact</MenuItem>}
     > 
       <ModalHeader>Get In Touch</ModalHeader>
       <ModalContent>
         <ModalDescription>
         <Form ref={form} onSubmit={sendEmail}>
-            <FormField>
+            <FormField name="from_name">
             <label>Name</label>
-            <input name="from_name" placeholder='Your Name...' />
+            <input placeholder='Your Name...' />
             </FormField>
-            <FormField>
+            <FormField name="reply_to">
             <label>Email Address</label>
-            <input name="reply_to" placeholder='Your Email...' />
+            <input placeholder='Your Email...' />
             </FormField>
             <FormTextArea name="message" label='Message' placeholder='Your Message...' />
+            <FormField name="submit">
+            <Button
+                positive
+                content="Submit"
+                type="submit"
+                fluid
+            />  
+            </FormField>
         </Form>
         </ModalDescription>
       </ModalContent>
       <ModalActions>
-        <Button
-          positive
-          content="Submit"
-          type="sumbmit"
-          icon='send'
-          labelPosition="right"
-        />  
         <Button
           primary
           content="Close"

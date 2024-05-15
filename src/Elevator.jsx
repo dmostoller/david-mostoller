@@ -9,6 +9,7 @@ import {
     Header,
     Image,
     Modal,
+    MenuItem,
     Embed
   } from 'semantic-ui-react'
   import thumb from './assets/elevator-thumb.png'
@@ -23,7 +24,7 @@ export default function Elevator () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Elevator Pitch</Button>}
+      trigger={<MenuItem>Elevator Pitch</MenuItem>}
     >
       <ModalContent embed>
       <Embed

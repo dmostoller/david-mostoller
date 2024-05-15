@@ -7,6 +7,7 @@ import {
     ModalActions,
     Button,
     Header,
+    MenuItem,
     Image,
     Modal,
   } from 'semantic-ui-react'
@@ -23,7 +24,7 @@ export default function Projects () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Projects</Button>}
+      trigger={<MenuItem>Projects</MenuItem>}
     >
       <ModalContent>
         <div className="ui centered grid">
