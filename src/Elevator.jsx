@@ -1,13 +1,10 @@
 
 import React, {useState} from "react"
 import {
-    ModalHeader,
-    ModalDescription,
     ModalContent,
     ModalActions,
     Button,
-    Header,
-    Image,
+    Icon,
     Modal,
     MenuItem,
     Embed
@@ -24,7 +21,7 @@ export default function Elevator () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<MenuItem>Elevator Pitch</MenuItem>}
+      trigger={<MenuItem><Icon name='video' />Elevator Pitch</MenuItem>}
     >
       <ModalContent embed>
       <Embed

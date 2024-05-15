@@ -1,14 +1,12 @@
 
 import React, {useState} from "react"
 import {
-    ModalHeader,
     ModalDescription,
     ModalContent,
     ModalActions,
     MenuItem,
     Button,
-    Header,
-    Image,
+    Icon,
     Modal,
   } from 'semantic-ui-react'
   import headshot from './assets/david-headshot-amtrak.jpg'
@@ -25,7 +23,7 @@ export default function Resume () {
       onOpen={() => setOpen(true)}
       open={open}
       height={"100vh"}
-      trigger={<MenuItem>Resume</MenuItem>}
+      trigger={<MenuItem><Icon name='book' />Resume</MenuItem>}
     >
       <ModalContent>
         <ModalDescription>

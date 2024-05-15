@@ -1,11 +1,11 @@
 
 import React, {useState} from "react"
 import {
-    ModalHeader,
     ModalDescription,
     ModalContent,
     ModalActions,
     Button,
+    Icon,
     Header,
     Image,
     MenuItem,
@@ -24,7 +24,7 @@ export default function About () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<MenuItem>About Me</MenuItem>}
+      trigger={<MenuItem><Icon name='user' />About Me</MenuItem>}
     >
       <ModalContent image>
         <Image size='huge' src={headshot} wrapped />

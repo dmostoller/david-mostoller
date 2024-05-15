@@ -1,14 +1,12 @@
 
 import React, {useState} from "react"
 import {
-    ModalHeader,
-    ModalDescription,
+
     ModalContent,
     ModalActions,
     Button,
-    Header,
+    Icon,
     MenuItem,
-    Image,
     Modal,
   } from 'semantic-ui-react'
 import marsThumb from './assets/thumb.png'
@@ -24,7 +22,7 @@ export default function Projects () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<MenuItem>Projects</MenuItem>}
+      trigger={<MenuItem><Icon name='cogs' />Projects</MenuItem>}
     >
       <ModalContent>
         <div className="ui centered grid">

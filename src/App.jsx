@@ -41,12 +41,12 @@ function App() {
         <h4 className='grey' style={{marginTop: "0px", marginBottom:"0px"}}>Full-Stack Software Engineer</h4>
         <h5 className='grey' style={{marginTop: "0px"}}>dmostoller@gmail.com</h5>
         
-        <Menu size='large' stackable compact>
+        <Menu size='large' stackable compact icon='labeled'>
             <About />
             <Projects />
             <Elevator />
             <Resume />
-            {/* <Email /> */}
+            <Email />
         </Menu>
       </GridColumn>
       </GridRow>

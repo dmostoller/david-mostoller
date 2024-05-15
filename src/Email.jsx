@@ -1,5 +1,6 @@
 
 import React, {useState, useRef} from "react"
+import emailjs from '@emailjs/browser';
 import {
     ModalHeader,
     ModalDescription,
@@ -9,24 +10,27 @@ import {
     Modal,
     MenuItem,
     Form,
+    Icon,
     FormField,
     FormTextArea,
+    
   } from 'semantic-ui-react'
-  import emailjs from '@emailjs/browser';
 
 
-export default function Email () {
+const Email = () => {
     const [open, setOpen] = useState(false)
     const form = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
-      emailjs.sendForm('service_jz3d31c', 'template_sau8r19', form.current, '2CBV5usGCJRMr4WbB')
-        .then((result) => {
+      emailjs.sendForm('service_jz3d31c', 'template_sau8r19', form.current, {
+        publicKey: '2CBV5usGCJRMr4WbB',
+    })
+        .then(() => {
             alert("Your Message Has Been Sent")
             setOpen(false)
         }, (error) => {
-            alert("Your Message Cannot Be Sent")
+            alert("Your Message Cannot Be Sent", error.text)
         });
       };
  
@@ -38,33 +42,29 @@ export default function Email () {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<MenuItem>Contact</MenuItem>}
+      trigger={<MenuItem><Icon name='mail' />Contact</MenuItem>}
     > 
       <ModalHeader>Get In Touch</ModalHeader>
       <ModalContent>
         <ModalDescription>
-        <Form ref={form} onSubmit={sendEmail}>
-            <FormField name="from_name">
-            <label>Name</label>
-            <input placeholder='Your Name...' />
-            </FormField>
-            <FormField name="reply_to">
-            <label>Email Address</label>
-            <input placeholder='Your Email...' />
-            </FormField>
-            <FormTextArea name="message" label='Message' placeholder='Your Message...' />
-            <FormField name="submit">
-            <Button
-                positive
-                content="Submit"
-                type="submit"
-                fluid
-            />  
-            </FormField>
-        </Form>
+            <form class="ui form" ref={form} onSubmit={sendEmail}>
+                <div class="field">
+                    <label>Name</label>
+                    <input type='text' name="from_name" placeholder="Your Name..."/>
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type='email' name="reply_to" placeholder="Your Email..."/>
+                </div>
+                <div class="field">
+                <label>Message</label>
+                    <textarea name="message" placeholder="Your Message..."/>
+                </div>
+                <button class="ui positive fluid button" type="submit">Submit</button>
+            </form>
         </ModalDescription>
       </ModalContent>
-      <ModalActions>
+      {/* <ModalActions>
         <Button
           primary
           content="Close"
@@ -72,7 +72,8 @@ export default function Email () {
           icon='remove'
           onClick={() => setOpen(false)}
         />
-      </ModalActions>
+      </ModalActions> */}
     </Modal>
     )    
 }
+export default Email
