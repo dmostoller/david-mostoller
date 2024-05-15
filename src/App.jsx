@@ -29,10 +29,8 @@ function App() {
 
   calendly();
   return (
-    <>
-    <div className='app' 
-    style={darkMode ? {backgroundColor: "#1c1c1c", width: "100vw", height:"100vh", display:"flex", alignItems: 'center'} : {backgroundColor: "#ffffff", width: "100vw", height:"100vh", display:"flex", alignItems: 'center'}}>
-    <Container>
+    <div className='ui container' 
+    style={darkMode ? {backgroundColor: "#1c1c1c", width: "100vw", height:"100vh", display:"flex", justifyContent: 'center', alignItems: 'center'} : {backgroundColor: "#ffffff", width: "100vw", height:"100vh", display:"flex", justifyContent: 'center', alignItems: 'center'}}>
         <Grid container stackable>
         <GridRow>
         <GridColumn>
@@ -83,7 +81,6 @@ function App() {
       </GridColumn>
       </GridRow>
       </Grid>
-      </Container>
           <div id='calendly'></div>
           <div id='dark-toggle'>
           <Radio toggle 
@@ -92,7 +89,6 @@ function App() {
           />
           </div>
       </div>
-      </>
   )
 }
 
