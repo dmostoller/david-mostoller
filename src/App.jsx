@@ -62,7 +62,7 @@ function App() {
         icon='labeled'>
             <About />
             <Projects />
-            <Elevator />
+            {/* <Elevator /> */}
             <Resume />
             <Email />
         </Menu>
@@ -74,7 +74,7 @@ function App() {
         icon='labeled'>
             <About />
             <Projects />
-            <Elevator />
+            {/* <Elevator /> */}
             <Resume />
             <Email />
         </Menu>
