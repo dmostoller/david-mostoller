@@ -116,11 +116,11 @@ export default function Projects () {
                 </a>
                 <div>
                     <a href="https://github.com/dmostoller/musicians-base" target='_blank'>
-                    <button className='ui teal button'>GitHub Repo</button>
+                       <button className='ui teal button'>GitHub Repo</button>
                     </a>
-                    <a href="https://superluminal.onrender.com/" target='_blank'>
-                    <button className='ui violet button'>Deployed Site</button>
-                </a>
+                    <a href="https://superluminalpsy.com/" target='_blank'>
+                     <button className='ui violet button'>Deployed Site</button>
+                    </a>
                 </div>
         </div>
         <div className="card">
@@ -133,6 +133,9 @@ export default function Projects () {
                 <a href="https://github.com/dmostoller/youtube-playlist-chatbot" target='_blank'>
                     <button className='ui teal button'>GitHub Repo</button>
                 </a>
+                <a href="https://superluminalpsy.com/learn" target='_blank'>
+                     <button className='ui violet button'>Deployed Site</button>
+                    </a>
                 </div>
         </div>
         <div className="card">
@@ -145,7 +148,7 @@ export default function Projects () {
                 <a href="https://github.com/dmostoller/social-artist-portfolio" target='_blank'>
                     <button className='ui teal button'>GitHub Repo</button>
                 </a>
-                <a href="https://yasmin-mostoller.onrender.com/" target='_blank'>
+                <a href="https://yasminmostoller.com/" target='_blank'>
                     <button className='ui violet button'>Deployed Site</button>
                 </a>
                 </div>
