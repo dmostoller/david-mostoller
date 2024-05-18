@@ -47,6 +47,18 @@ export default function Projects () {
                 </div>
         </div>
         <div className="card">
+            <h3 style={{marginBottom:"0px"}}>TutorBot</h3>
+            <h5 className='grey' style={{marginTop: "0px"}}>ChatGPT Assistant for Youtube Playlists</h5>
+            <a href="https://www.loom.com/share/54ffdd1cbc394c0c8b0ac4d3a3783097" target='_blank'>
+                    <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/54ffdd1cbc394c0c8b0ac4d3a3783097-with-play.gif"></img>
+                </a>
+                <div>
+                <a href="https://github.com/dmostoller/youtube-playlist-chatbot" target='_blank'>
+                    <button className='ui teal button'>GitHub Repo</button>
+                </a>
+                </div>
+        </div>
+        <div className="card">
             <h3 style={{marginBottom:"0px"}}>Social Art Portfolio</h3>
             <h5 className='grey' style={{marginTop: "0px"}}>A Fresh Take on an Artist Portfolio</h5>
                 <a href="https://www.loom.com/share/6963e453b24648c7863de7ad8d490ec4" target='_blank'>
@@ -107,6 +119,18 @@ export default function Projects () {
                     </a>
                     <a href="https://superluminal.onrender.com/" target='_blank'>
                     <button className='ui violet button'>Deployed Site</button>
+                </a>
+                </div>
+        </div>
+        <div className="card">
+            <h3 style={{marginBottom:"0px"}}>TutorBot</h3>
+            <h5 className='grey' style={{marginTop: "0px"}}>ChatGPT Assistant for Youtube Playlists</h5>
+            <a href="https://www.loom.com/share/54ffdd1cbc394c0c8b0ac4d3a3783097" target='_blank'>
+                    <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/54ffdd1cbc394c0c8b0ac4d3a3783097-with-play.gif"></img>
+                </a>
+                <div>
+                <a href="https://github.com/dmostoller/youtube-playlist-chatbot" target='_blank'>
+                    <button className='ui teal button'>GitHub Repo</button>
                 </a>
                 </div>
         </div>
