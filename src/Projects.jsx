@@ -11,6 +11,7 @@ import {
   } from 'semantic-ui-react'
 import marsThumb from './assets/thumb.png'
 import musicThumb from './assets/thumb-1.png'
+import tutorThumb from './assets/tutorthumb.png'
 import { useDarkMode } from "./context/darkMode"
 
 export default function Projects () {
@@ -126,7 +127,7 @@ export default function Projects () {
             <h3 style={{marginBottom:"0px"}}>TutorBot</h3>
             <h5 className='grey' style={{marginTop: "0px"}}>ChatGPT Assistant for Youtube Playlists</h5>
             <a href="https://www.loom.com/share/54ffdd1cbc394c0c8b0ac4d3a3783097" target='_blank'>
-                    <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/54ffdd1cbc394c0c8b0ac4d3a3783097-with-play.gif"></img>
+                    <img style={{maxWidth: "300px"}} src={tutorThumb}></img>
                 </a>
                 <div>
                 <a href="https://github.com/dmostoller/youtube-playlist-chatbot" target='_blank'>
