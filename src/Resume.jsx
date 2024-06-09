@@ -9,7 +9,7 @@ import {
     Icon,
     Modal,
   } from 'semantic-ui-react'
-import resume from './assets/DBM_2024_SE_Resume.pdf'
+import resume from './assets/DBM_2024_SE_Resume_June_2024.pdf'
 import { useDarkMode } from "./context/darkMode"
 
 export default function Resume () {
