@@ -1,10 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import mediumLogo from './assets/medium-fill-svgrepo-com.svg/'
 import gitLogo from './assets/github-svgrepo-com-4.svg'
 import linkedInLogo from './assets/linkedin-box-fill-svgrepo-com.svg'
-import marsThumb from './assets/thumb.png'
-import musicThumb from './assets/thumb-1.png'
-import myResume from './assets/DBM_2024_SE_Resume.pdf'
 import 'semantic-ui-css/semantic.min.css'
 import About from './About'
 import Resume from './Resume'
@@ -14,7 +11,7 @@ import './App.css'
 import Elevator from './Elevator'
 import Projects from './Projects'
 import Email from './Email'
-import { Container, GridRow, GridColumn, Grid, Menu, ButtonGroup, Button, MenuItem, Icon, Radio} from 'semantic-ui-react'
+import {GridRow, GridColumn, Grid, Menu, Radio} from 'semantic-ui-react'
 
 function App() {
   const {darkMode, setDarkMode} = useDarkMode();
