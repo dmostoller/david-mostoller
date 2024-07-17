@@ -53,8 +53,9 @@ function App() {
         {darkMode ?
         <Menu size='large' 
         inverted 
-        borderless 
-        stackable 
+        borderless
+        text 
+        // stackable 
         compact 
         icon='labeled'>
             <About />
@@ -66,7 +67,8 @@ function App() {
         :
         <Menu size='large'  
         borderless 
-        stackable 
+        // stackable 
+        text
         compact 
         icon='labeled'>
             <About />
